@@ -4,6 +4,7 @@
     background-image: url("img/star-empty.svg");
 }
 .star1:hover {
+    width: 100px;
     background-image: url("img/star.svg");
 }
 
@@ -12,8 +13,6 @@
     background-image: url("img/star-empty.svg");
 }
 .star2:hover {
+    width: 100px;
     background-image: url("img/star.svg");
-    .star1 {
-        background-image: url("img/star.svg");
-    }
 }
