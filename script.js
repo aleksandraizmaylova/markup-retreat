@@ -1,4 +1,4 @@
-
+let clicked = false;
 document.addEventListener('DOMContentLoaded', () => {
     const wrapper = document.querySelector('.wrapper');
     const stars = wrapper.querySelectorAll('.star');
@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     wrapper.addEventListener('mouseleave', () => {
-        stars.forEach(s => s.classList.remove('is-filled'));
-    });
+        if (!clicked)
+            stars.forEach(s => s.classList.remove('is-filled'));
+    })
+    wrapper.addEventListener('click', () => {
+        clicked = !clicked;
+    })
 });
