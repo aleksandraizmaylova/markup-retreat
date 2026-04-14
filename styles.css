@@ -1,19 +1,25 @@
-/* Пиши стили тут */
-.star1 {
-    width: 100px;
-    background-image: url("img/star-empty.svg");
-}
-.star1:hover {
-    background-image: url("img/star.svg");
+.wrapper {
+    display: flex;
+    gap: 5px;
 }
 
-.star2 {
-    width: 100px;
-    background-image: url("img/star-empty.svg");
+.star {
+    position: relative;
+    width: 50px;
+    height: 50px;
 }
-.star2:hover {
-    background-image: url("img/star.svg");
-    .star1 {
-        background-image: url("img/star.svg");
-    }
+
+.star img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.star-fill {
+    opacity: 0;
+    transform: scale(90%);
+}
+
+.star.is-filled .star-fill {
+    opacity: 1;
 }
